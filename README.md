@@ -5,6 +5,7 @@
 ```bash
 git clone https://git.miem.hse.ru/anvibabenko/hsecg.git
 ```
+
 ### если запускать через виртуальное окружение
 
 **нужно создать виртуальное окружение:**
