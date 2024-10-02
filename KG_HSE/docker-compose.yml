@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ccgg:
+    build: .
+    volumes:
+      - .:/app  # кладём текущую директорию в контейнер
+    environment:
+      - PYTHONUNBUFFERED=1  # для вывода в реальном времени
