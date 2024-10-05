@@ -43,7 +43,7 @@ python main.py
 1. если образ ещё не собран, выполните команду для сборки Docker-образа:
    
    ```bash
-   docker build -t hsecg .
+   docker build -t hsecg 
    ```
 
 2. после сборки образа запустите контейнер с проектом:
