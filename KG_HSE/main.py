@@ -2,8 +2,8 @@ import os
 import webbrowser
 from PIL import Image
 import numpy as np
-from modules_folder.color import get_dominant_color, is_similar_color
-from modules_folder.page_generator import generate_html
+from ModulesFolder.color import get_dominant_color, is_similar_color
+from ModulesFolder.page_generator import generate_html
 
 example_image_path = "example.jpg"
 dataframe_folder = "DataFrame"
@@ -24,7 +24,7 @@ for filename in os.listdir(dataframe_folder):
             filtered_images.append(os.path.join(dataframe_folder, filename))
 
 
-print("Отобранные изображения:")
+print("отобранные изображения:")
 for img in filtered_images:
     print(img)
 print('\n')

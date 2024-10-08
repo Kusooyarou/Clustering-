@@ -4,10 +4,12 @@ from sklearn.cluster import KMeans
 from collections import Counter
 
 example_image_path = "example.jpg"
+
+
 def get_dominant_color(image, k=4):
     image = image.reshape((image.shape[0] * image.shape[1], 3))
 
-    clt = KMeans(n_clusters = k)
+    clt = KMeans(n_clusters=k)
     labels = clt.fit_predict(image)
 
     label_counts = Counter(labels)
