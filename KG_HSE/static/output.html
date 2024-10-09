@@ -1,8 +1,4 @@
-from flask import url_for
 
-
-def generate_html(image_paths, output_path="output.html"):
-    html_content = """
     <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,15 +40,8 @@ def generate_html(image_paths, output_path="output.html"):
         </style>
     </head>
     <body>
-    """
+    <img src="/static/uploads/23.jpg" alt="Image">
 
-    for image_path in image_paths:
-        html_content += f'<img src="{url_for("static", filename=image_path)}" alt="Image">\n'
-
-    html_content += """
     </body>
     </html>
-    """
-
-    with open(output_path, "w") as f:
-        f.write(html_content)
+    
