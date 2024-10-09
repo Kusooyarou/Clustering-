@@ -72,7 +72,7 @@ python main.py
 2. после сборки запустите контейнер:
 
    ```bash
-   docker run -it --rm hsecg
+   docker run -p 3000:3000 hsecg
    ```
 
 3. если хотите запустить проект с использованием Docker Compose, выполните команду:
